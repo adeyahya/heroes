@@ -1,4 +1,6 @@
 ---
+import "../styles/global.css";
+import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
@@ -6,7 +8,7 @@ import Header from "../components/Header.astro";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 
 const posts = (await getCollection("blog")).sort(
-  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 ---
 
@@ -18,22 +20,24 @@ const posts = (await getCollection("blog")).sort(
   <body>
     <Header />
     <main>
-      <h1>Pahlawan Nasional Indonesia</h1>
-      <p>
-        Website ini berisi daftar pahlawan nasional Indonesia. Setiap pahlawan
-        akan direpresentasikan oleh sebuah postingan blog yang berisi sejarah
-        singkat yang penting dan juga tautan ke Wikipedia jika tersedia.
-      </p>
-      <ul>
-        {
-          posts.map((post) => (
-            <li>
-              <a href={`/blog/${post.id}/`}>{post.data.title}</a>
-            </li>
-          ))
-        }
-      </ul>
+      <section class="container mx-auto px-4">
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 grid-flow-row"
+        >
+          {
+            posts.map((post) => (
+              <div>
+                <a href={`/blog/${post.id}/`}>
+                  {post.data.heroImage && (
+                    <Image width={480} src={post.data.heroImage} alt="" />
+                  )}
+                  <h4 class="text-xl px-2 font-bold pb-6">{post.data.title}</h4>
+                </a>
+              </div>
+            ))
+          }
+        </div>
+      </section>
     </main>
-    <Footer />
   </body>
 </html>

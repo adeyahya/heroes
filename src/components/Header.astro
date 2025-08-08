@@ -1,13 +1,22 @@
 ---
-import { SITE_TITLE } from "../consts";
+import { Image } from "astro:assets";
+import logo80 from "../assets/80.png";
 ---
 
 <header
-  class="mb-4 lg:mb-6 sticky top-0 left-0 bg-white border-b border-b-gray-300"
+  class="mb-4 lg:mb-6 sticky top-0 left-0 bg-white border-b border-b-gray-200"
 >
   <nav class="container mx-auto flex flex-row px-4 py-2">
     <div class="flex-1">
-      <h2 class="font-bold text-xl"><a href="/">{SITE_TITLE}</a></h2>
+      <h2 class="text-xl">
+        <a class="flex flex-col gap-0" href="/">
+          <span class="font-bold">Pahlawan</span>
+          <span class="-mt-2">Nasional</span>
+        </a>
+      </h2>
+    </div>
+    <div>
+      <Image class="w-[100px]" src={logo80} alt="HUT RI 80" />
     </div>
   </nav>
 </header>

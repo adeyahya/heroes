@@ -20,11 +20,12 @@ const posts = (await getCollection("blog")).sort(
   <body>
     <Header />
     <main class="pb-16">
-      <section class="px-4 pb-4">
-        <blockquote>
-          Situs ini berisi material pendidikan sejarah pahlawan nasional
-          Indonesia dalam rangka perayaan Hari Kemerdekaan ke-80 yang
-          diselenggarakan di
+      <section class="px-4 pb-4 container mx-auto">
+        <blockquote class="italic text-sm text-gray-600 max-w-[500px]">
+          Situs ini berisi material pendidikan sejarah <strong
+            >Pahlawan Nasional Indonesia</strong
+          > dalam rangka perayaan Hari Kemerdekaan ke-80 yang diselenggarakan di
+          Mastrip, Jrebeng Wetan, RT 06 / RW 04 Kota Probolinggo.
         </blockquote>
       </section>
       <section class="container mx-auto px-4">
@@ -46,5 +47,6 @@ const posts = (await getCollection("blog")).sort(
         </div>
       </section>
     </main>
+    <Footer />
   </body>
 </html>

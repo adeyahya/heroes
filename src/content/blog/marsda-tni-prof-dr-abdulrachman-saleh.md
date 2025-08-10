@@ -1,8 +1,8 @@
 ---
-title: Marsda TNI Prof. Dr. Abdurahman Saleh
+title: Marsda TNI Prof. Dr. Abdulrachman Saleh
 description: Pahlawan Nasional dari Jakarta
 pubDate: 2025-08-09
-heroImage: /src/assets/heroes/Marsda TNI Prof. Dr. Abdurahman Saleh.png
+heroImage: /src/assets/heroes/Marsda TNI Prof. Dr. Abdulrachman Saleh.png
 ---
 Marsda TNI Prof. Dr. Abdulrachman Saleh, lahir di Jakarta pada 1 Juli 1909, adalah seorang pahlawan nasional Indonesia yang dikenal dengan beragam talenta dan dedikasinya yang luar biasa. Beliau merupakan seorang dokter ahli fisiologi yang dijuluki "Bapak Ilmu Faal Indonesia", perintis teknologi radio, dan juga pelopor penerbangan di Indonesia. Semasa hidupnya, Abdulrachman Saleh aktif dalam berbagai organisasi kepemudaan dan berhasil memperoleh lisensi pilot, menunjukkan minatnya yang besar di bidang kedirgantaraan.
 

@@ -2,7 +2,7 @@
 title: Jenderal Gatot Subroto
 description: Pahlawan Nasional dari Jawa Tengah
 pubDate: 2025-08-09
-heroImage: /src/assets/heroes/jendral gatot subroto.png
+heroImage: /src/assets/heroes/jenderal gatot subroto.png
 ---
 Jenderal Gatot Subroto adalah seorang pahlawan nasional Indonesia yang lahir di Jatilawang, Jawa Tengah pada 10 Oktober 1907. Ia dikenal sebagai sosok militer yang tegas, disiplin, dan berani, serta memiliki kepedulian tinggi terhadap rakyat kecil. Karier militernya dimulai di Tentara Kerajaan Hindia Belanda (KNIL), kemudian ia bergabung dengan Pembela Tanah Air (PETA) pada masa pendudukan Jepang, dan setelah kemerdekaan, ia menjadi bagian penting dari Tentara Keamanan Rakyat (TKR) yang menjadi cikal bakal Tentara Nasional Indonesia (TNI).
 

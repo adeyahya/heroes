@@ -21,7 +21,5 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
-  adapter: vercel({
-    includeFiles: ["./src/assets/gallery"]
-  }),
+  adapter: vercel(),
 });

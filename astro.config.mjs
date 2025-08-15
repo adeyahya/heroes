@@ -2,7 +2,6 @@
 import tailwindcss from '@tailwindcss/vite'
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
-import swup from '@swup/astro';
 import vercel from '@astrojs/vercel';
 import { defineConfig } from 'astro/config';
 
@@ -16,7 +15,6 @@ export default defineConfig({
     mdx(),
     sitemap(),
     tailwindcss(),
-    swup(),
     react(),
   ],
 

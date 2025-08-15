@@ -248,9 +248,13 @@ export const prerender = true;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
   </head>
   <body>
     <Header />
@@ -258,7 +262,12 @@ export const prerender = true;
       <div id="masonry">
         {
           images.map((n) => (
-            <Image class="w-1/2 md:w-1/4" src={n} width={400} alt="" />
+            <Image
+              class="w-1/2 md:w-1/4 glightbox bg-gray-200"
+              src={n}
+              width={1200}
+              alt=""
+            />
           ))
         }
       </div>
@@ -268,5 +277,7 @@ export const prerender = true;
 
 <script>
   import Masonry from "masonry-layout";
+  import Glightbox from "glightbox";
   new Masonry("#masonry", {});
+  const lightbox = Glightbox({});
 </script>

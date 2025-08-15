@@ -1,0 +1,123 @@
+---
+import "../styles/global.css";
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import income from "../data/income.json";
+import spending from "../data/spending.json";
+import sponsors from "../data/sponsors.json";
+
+const formatter = new Intl.NumberFormat("id-ID", {
+  style: "currency",
+  currency: "IDR",
+  minimumFractionDigits: 0,
+});
+---
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main class="pb-16">
+      <div class="container mx-auto px-4 prose">
+        <header>
+          <h2>Pembiayaan</h2>
+          <p class="-mt-5 text-gray-500 text-lg">
+            Tabel pembiayaan yang dikumpulkan melalui iuran dari masing-masing
+            Gang
+          </p>
+        </header>
+        <table>
+          <!-- head -->
+          <thead>
+            <tr>
+              <th>Nama</th>
+              <th>Jumlah</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              income.map((item) => (
+                <tr>
+                  <td>{item.name}</td>
+                  <td>{formatter.format(item.contribution)}</td>
+                </tr>
+              ))
+            }
+            <tr class="bg-green-100">
+              <th class="py-2 px-2">Total</th>
+              <th>
+                {
+                  formatter.format(
+                    income.reduce((acc, val) => acc + val.contribution, 0)
+                  )
+                }
+              </th>
+            </tr>
+          </tbody>
+        </table>
+        <header>
+          <h2>Pengeluaran</h2>
+          <p class="-mt-5 text-gray-500 text-lg">
+            Tabel pengeluaran yang diambil dari dana kolektif dan dana
+            sponsorship.
+          </p>
+        </header>
+        <table>
+          <!-- head -->
+          <thead>
+            <tr>
+              <th>Keterangan</th>
+              <th>Harga</th>
+              <th>Jumlah</th>
+              <th>Subtotal</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              spending.map((item) => (
+                <tr>
+                  <td>{item.name}</td>
+                  <td>{formatter.format(item.price)}</td>
+                  <td>{item.qty}</td>
+                  <th>{formatter.format(item.price * item.qty)}</th>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+        <header>
+          <h2>Sponsor</h2>
+          <p class="-mt-5 text-gray-500 text-lg">
+            Tabel sponsorship yang diterima panitia dan diperuntukkan untuk
+            keperluan acara.
+          </p>
+        </header>
+        <table>
+          <!-- head -->
+          <thead>
+            <tr>
+              <th>Nama</th>
+              <th>Keterangan</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              sponsors.map((item) => (
+                <tr>
+                  <td>{item.name}</td>
+                  <td>{item.note}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -6,6 +6,8 @@ import swup from '@swup/astro';
 import vercel from '@astrojs/vercel';
 import { defineConfig } from 'astro/config';
 
+import react from '@astrojs/react';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://heroes.inklusif.id',
@@ -15,6 +17,7 @@ export default defineConfig({
     sitemap(),
     tailwindcss(),
     swup(),
+    react(),
   ],
 
   vite: {

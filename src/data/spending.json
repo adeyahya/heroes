@@ -1,1 +1,22 @@
-[{ "name": "Buku Sidu", "price": 10000, "qty": 5 }]
+[
+  { "name": "Dekorasi 1", "price": 90500, "qty": 1 },
+  { "name": "Dekorasi 2", "price": 130000, "qty": 1 },
+  { "name": "Dekorasi 3", "price": 167000, "qty": 1 },
+  { "name": "Dekorasi 4", "price": 20000, "qty": 1 },
+  { "name": "Kue Jalan Sehat", "price": 300000, "qty": 1 },
+  { "name": "Cetak Tiket", "price": 28000, "qty": 1 },
+  { "name": "Minuman Jalan Sehat", "price": 216000, "qty": 1 },
+  { "name": "Umbul Umbul", "price": 120000, "qty": 1 },
+  { "name": "Hadiah Jalan Sehat", "price": 400000, "qty": 1 },
+  { "name": "Perlengkapan Lomba 1", "price": 50000, "qty": 1 },
+  { "name": "Perlengkapan Lomba 2", "price": 36700, "qty": 1 },
+  { "name": "Perlengkapan Lomba 3", "price": 22000, "qty": 1 },
+  { "name": "Tambahan Hadiah Jalan Sehat", "price": 42000, "qty": 1 },
+  { "name": "Tambahan Hadiah Jalan Sehat", "price": 31527, "qty": 1 },
+  { "name": "Sewa Sound System", "price": 500000, "qty": 1 },
+  { "name": "Snack Acara Tasyakuran", "price": 7000, "qty": 120 },
+  { "name": "Hadiah Lomba Anak 1", "price": 439020, "qty": 1 },
+  { "name": "Hadiah Lomba Anak 2", "price": 297000, "qty": 1 },
+  { "name": "Hadiah Bapak & Ibu & Quiz", "price": 355000, "qty": 1 },
+  { "name": "Konsumsi Tasyakuran 16 Agustus", "price": 3050000, "qty": 1 }
+]

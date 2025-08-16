@@ -1,6 +1,18 @@
 [
   {
-    "name": "P Anang",
+    "name": "P Anang (Srikoyo)",
+    "note": "Lokasi acara, konsumsi, hadiah doorprize"
+  },
+  {
+    "name": "LA Multimedia",
+    "note": "Multimedia Setup"
+  },
+  {
+    "name": "LA Laundry",
+    "note": "Hadiah doorprize"
+  },
+  {
+    "name": "P Anang (Blok B)",
     "note": "Lokasi acara, lighting setup, konsumsi, hadiah doorprize"
   },
   {
@@ -10,5 +22,17 @@
   {
     "name": "Ibu Firdiyana",
     "note": "hadiah doorprize"
+  },
+  {
+    "name": "Tiba Tiba Creative Studio",
+    "note": "Tralis & Poster Pahlawan"
+  },
+  {
+    "name": "Tiba Tiba Creative Studio",
+    "note": "Dokumentasi"
+  },
+  {
+    "name": "Inklusif.id",
+    "note": "Website & Dokumentasi"
   }
 ]

@@ -3,7 +3,6 @@
 // all pages through the use of the <BaseHead /> component.
 import "../styles/global.css";
 import { SITE_TITLE } from "../consts";
-import { ClientRouter } from "astro:transitions";
 
 interface Props {
   title: string;
@@ -47,5 +46,3 @@ const { title, description } = Astro.props;
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-
-<ClientRouter />

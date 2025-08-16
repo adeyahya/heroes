@@ -7,8 +7,6 @@ import { defineConfig } from 'astro/config';
 
 import react from '@astrojs/react';
 
-import db from '@astrojs/db';
-
 // https://astro.build/config
 export default defineConfig({
   site: 'https://heroes.inklusif.id',
@@ -18,7 +16,6 @@ export default defineConfig({
     sitemap(),
     tailwindcss(),
     react(),
-    db(),
   ],
 
   vite: {

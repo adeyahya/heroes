@@ -13,10 +13,13 @@
   { "name": "Perlengkapan Lomba 3", "price": 22000, "qty": 1 },
   { "name": "Tambahan Hadiah Jalan Sehat", "price": 42000, "qty": 1 },
   { "name": "Tambahan Hadiah Jalan Sehat", "price": 31527, "qty": 1 },
-  { "name": "Sewa Sound System", "price": 500000, "qty": 1 },
   { "name": "Snack Acara Tasyakuran", "price": 7000, "qty": 120 },
+  { "name": "Air mineral Acara Tasyakuran", "price": 55000, "qty": 1 },
+  { "name": "Tausiyah", "price": 300000, "qty": 1 },
   { "name": "Hadiah Lomba Anak 1", "price": 439020, "qty": 1 },
   { "name": "Hadiah Lomba Anak 2", "price": 297000, "qty": 1 },
   { "name": "Hadiah Bapak & Ibu & Quiz", "price": 355000, "qty": 1 },
-  { "name": "Konsumsi Tasyakuran 16 Agustus", "price": 2800000, "qty": 1 }
+  { "name": "Konsumsi Tasyakuran 16 Agustus", "price": 2800000, "qty": 1 },
+  { "name": "Sewa Sound System Tanggal 10", "price": 500000, "qty": 1 },
+  { "name": "Sewa Sound System Tanggal 16", "price": 500000, "qty": 1 }
 ]
